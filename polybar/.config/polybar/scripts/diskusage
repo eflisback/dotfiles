@@ -2,5 +2,4 @@
 
 location=/
 [ -d "$location" ] || exit
-icon=" "
-echo "$icon $(df -h "$location" | awk ' /[0-9]/ {print $3}')"
+echo "$(df -h "$location" | awk ' /[0-9]/ {print $3}')"
