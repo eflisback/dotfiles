@@ -1,0 +1,10 @@
+[user]
+  name = Ebbe Flisbäck
+  email = ebbe.flisback@gmail.com
+
+[core]
+  excludefile = ~/.gitignore_global
+  editor = nano
+
+[init]
+  defaultBranch = main
