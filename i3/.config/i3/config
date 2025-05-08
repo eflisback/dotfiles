@@ -190,8 +190,8 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 exec --no-startup-id xrandr --output Virtual1 --mode 1920x1080 
-exec --no-startup-id feh --bg-fill --randomize $HOME/dotfiles/wallpapers/*
-exec --no-startup-id sh $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id feh --bg-fill --randomize $HOME/dotfiles/wallpapers/*
+exec_always --no-startup-id sh $HOME/.config/polybar/launch.sh
 exec --no-startup-id picom
 exec --no-startup-id sh $HOME/.config/i3/setup-touchpad.sh
 
