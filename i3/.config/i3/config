@@ -71,8 +71,10 @@ bindcode $mod+40 exec --no-startup-id sh $HOME/.config/rofi/rofi-launcher
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
+# XPS Touchbar Keys
 bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
 bindsym XF86MonBrightnessUp exec brightnessctl set 5%+
+bindsym Print exec flameshot gui
 
 # change focus
 bindsym $mod+j focus left
