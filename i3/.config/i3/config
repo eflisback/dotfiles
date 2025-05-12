@@ -197,7 +197,8 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-exec --no-startup-id xrandr --output Virtual1 --mode 1920x1080 
+# Desktop dual monitors
+exec --no-startup-id xrandr --output DP-3 --primary --mode 1920x1080 --rate 143.98 --pos 0x0 --output HDMI-1 --mode 1920x1080 --pos 1920x0
 exec_always --no-startup-id feh --bg-fill --randomize $HOME/dotfiles/wallpapers/*
 exec_always --no-startup-id sh $HOME/.config/polybar/launch.sh
 exec --no-startup-id picom
